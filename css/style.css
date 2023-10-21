@@ -33,6 +33,10 @@ html {
     background-color: #0274d8ae;
 }
 
+#resultado{
+    margin-top: 4em;
+}
+
 @media screen and (min-width: 1024px) {
     #titulo > img {
         margin-right: 13em;
@@ -158,6 +162,10 @@ html {
     h1 {
         font-size: 40px;
     }
+
+    #resultado{
+        margin-top: 6em;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -192,14 +200,21 @@ html {
     }
 
     #juros {
-        margin-bottom: 6em;
+        margin-bottom: 10em;
     }
 
     p {
-        font-size: 38px;
+        font-size: 48px;
     }
 
     h1 {
-        font-size: 58px;
+        font-size: 72px;
+    }
+
+    #btn{
+    border-radius: 0.28em;
+    width: 5em;
+    height: 2em;
+    font-size: 42px;
     }
 }
