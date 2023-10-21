@@ -1,37 +1,52 @@
+<!-- Inicio do HTML-->
 <!DOCTYPE html>
+<!-- Define o Padrão como PT/BR-->
 <html lang="pt-br">
+    <!-- Tag Head -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Prestações</title>
+    <!-- Importa o CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Importa a Fonte do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
+<!-- Tag Body -->
 <body>
+    <!-- Título da Página-->
     <div id="titulo">
         <img src="img/Carro.png">
         <h1>Calculadora de Prestações</h1>
     </div>
+    <!-- Captura o Valor Financiado -->
     <div id="valor">
         <p>Digite o Valor Financiado: </p>
         <input type="number" name="number-1" class="input" id="valor-financiado">
     </div>
+    <!-- Captura os Números de Prestações -->
     <div id="prestacoes">
         <p>Digite a Quantidade de Prestações: </p>
         <input type="number" name="number-2" class="input" id="numero-prestacoes">
     </div>
+    <!-- Captura a Taxa de Juros-->
     <div id="juros">
         <p>Digite a Taxa de Juros: </p>
         <input type="number" name="number-3" class="input" id="taxa-juros">
     </div>
+    <!-- Botão -->
     <div>
         <input type="submit" id="btn" value="Calcular">
     </div>
+    <!-- Printa o Resultado na Tela -->
     <div id="resultado">
         <p id="resultado-prestacao"></p>
     </div>
+    <!-- Código JavaScript-->
     <script src="js/script.js"></script>
 </body>
+<!-- Fim do Body -->
 </html>
+<!-- Fim do HTML-->
