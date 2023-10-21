@@ -12,7 +12,6 @@ html {
 }
 
 .input {
-    justify-content: center;
     text-align: left;
     background-color: #202020;
     color: #fafafa;
@@ -44,7 +43,6 @@ html {
 
     #titulo {
         display: flex;
-        align-items: left;
         margin-bottom: 2.5em;
     }
 
@@ -83,7 +81,6 @@ html {
     }
 
     #titulo{
-        align-items: left;
         margin-bottom: 4em;
     }
 
@@ -116,7 +113,6 @@ html {
     }
 
     #titulo {
-        align-items: left;
         margin-bottom: 4em;
     }
 
@@ -141,14 +137,12 @@ html {
 
     #titulo {
         display: flex;
-        align-items: left;
         margin-bottom: 2.5em;
     }
 
     #valor-financiado, #numero-prestacoes, #taxa-juros {
         width: 50%;
         align-items: center;
-        justify-content: center;
     }
 
     #juros {
@@ -175,7 +169,6 @@ html {
     }
 
     #titulo {
-        align-items: left;
         margin-bottom: 3.5em;
     }
 
