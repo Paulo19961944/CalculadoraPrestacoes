@@ -1,0 +1,205 @@
+* {
+    text-align: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif, 'Playfair Display', serif, 'Ubuntu', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100em;
+    background-color: #fafafa;
+    color: #404040;
+}
+
+.input {
+    justify-content: center;
+    text-align: left;
+    background-color: #202020;
+    color: #fafafa;
+}
+
+#btn {
+    font-size: 16px;
+    background-color: #0275d8;
+    color: #fafafa;
+    border-color: #9b9b9b;
+    font-weight: 500;
+    border-radius: 0.28em;
+    width: 5em;
+    height: 2em;
+}
+
+#btn:hover {
+    background-color: #0274d8ae;
+}
+
+@media screen and (min-width: 1024px) {
+    #titulo > img {
+        margin-right: 13em;
+    }
+
+    #titulo {
+        display: flex;
+        align-items: left;
+        margin-bottom: 2.5em;
+    }
+
+    #valor, #juros, #prestacoes {
+        display: flex;
+    }
+
+    #valor-financiado, #numero-prestacoes, #taxa-juros {
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #juros {
+        margin-bottom: 3em;
+    }
+
+    p {
+        text-align: justify;
+        margin-right: 0.5em;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-bottom: 1.5em;
+        font-weight: 600;
+        font-size: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    img {
+        text-align: center;
+    }
+
+    #titulo {
+        align-items: left;
+        margin-bottom: 4em;
+    }
+
+    #juros {
+        margin-bottom: 4em;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-weight: 600;
+        font-size: 36px;
+    }
+
+    input{
+        margin-bottom: 0.5em;
+    }
+
+    #valor-financiado, #numero-prestacoes, #taxa-juros{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    img {
+        text-align: center;
+    }
+
+    #titulo {
+        align-items: left;
+        margin-bottom: 4em;
+    }
+
+    #juros {
+        margin-bottom: 4.5em;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    #valor-financiado, #numero-prestacoes, #taxa-juros{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    img {
+        margin-right: 3em;
+    }
+
+    #titulo {
+        display: flex;
+        align-items: left;
+        margin-bottom: 2.5em;
+    }
+
+    #valor-financiado, #numero-prestacoes, #taxa-juros {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #juros {
+        margin-bottom: 4.5em;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #titulo > img {
+        text-align: center;
+        margin-right: 24em;
+    }
+
+    #titulo {
+        align-items: left;
+        margin-bottom: 3.5em;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #titulo > img {
+        text-align: center;
+        margin-right: 50em;
+        width: 14%;
+    }
+
+    #valor-financiado, #numero-prestacoes, #taxa-juros {
+        width: 75%;
+    }
+
+    #juros {
+        margin-bottom: 6em;
+    }
+
+    p {
+        font-size: 38px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+}
