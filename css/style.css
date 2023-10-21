@@ -1,213 +1,263 @@
+/** Define um Padrão para Todos os Elementos */
 * {
-    text-align: center;
-    align-items: center;
-    font-family: 'Nunito', sans-serif, 'Playfair Display', serif, 'Ubuntu', sans-serif;
+    text-align: center; /* Alinha o Texto ao Centro */
+    align-items: center; /* Alinha Itens ao Centro */
+    font-family: 'Nunito', sans-serif, 'Playfair Display', serif, 'Ubuntu', sans-serif; /* Tipo de Fonte */
 }
 
+/** Define padrão para elementos HTML */
 html {
-    width: 100%;
-    height: 100em;
-    background-color: #fafafa;
-    color: #404040;
+    width: 100%; /*Largura em 100% da Tela*/
+    height: 100em; /*Altura em Toda a Tela*/
+    background-color: #fafafa; /*Cor de fundo do HTML*/
+    color: #404040; /*Cor das Letras de Fundo*/
 }
 
+/** Define padrão para os Input */
 .input {
-    text-align: left;
-    background-color: #202020;
-    color: #fafafa;
+    text-align: left; /* Alinha o Texto a Esquerda */
+    background-color: #202020; /* Cor de Fundo dos Input */
+    color: #fafafa; /* Cor da Letra dos Inputs*/
 }
 
+/** Define Padrão para o Botão*/
 #btn {
-    font-size: 16px;
-    background-color: #0275d8;
-    color: #fafafa;
-    border-color: #9b9b9b;
-    font-weight: 500;
-    border-radius: 0.28em;
-    width: 5em;
-    height: 2em;
+    font-size: 16px; /* Tamanho da Fonte do Botão */
+    background-color: #0275d8; /* Cor de Fundo do Botão */
+    color: #fafafa; /* Cor da Letra do Botão */
+    border-color: #9b9b9b; /* Cor da Borda do Botão */
+    font-weight: 500; /* Peso da Fonte do Botão */
+    border-radius: 0.28em; /* Arredonda o Botão */
+    width: 5em; /* Largura do Botão */
+    height: 2em; /* Altura do Botão */
 }
 
+/* Padrão quando passar o mouse em cima do botão */
 #btn:hover {
-    background-color: #0274d8ae;
+    background-color: #0274d8ae; /* Cor de Fundo ao Passar o Mouse*/
 }
 
 #resultado{
-    margin-top: 4em;
+    margin-top: 4em; /* Margem do Resultado */
 }
 
+/** Define padrão para telas até 1024px*/
 @media screen and (min-width: 1024px) {
+    
+    /* Define padrão para a imagem*/
     #titulo > img {
-        margin-right: 13em;
+        margin-right: 13em; /* Coloca margem e alinha o texto ao centro */
     }
 
     #titulo {
-        display: flex;
-        margin-bottom: 2.5em;
+        display: flex; /* Divide os Elementos*/
+        margin-bottom: 2.5em; /* Margem do Título */
     }
 
+    /** Divide os elementos do Input */
     #valor, #juros, #prestacoes {
         display: flex;
     }
 
+    /** Define os Inputs*/
     #valor-financiado, #numero-prestacoes, #taxa-juros {
-        width: 80%;
-        align-items: center;
-        justify-content: center;
+        width: 80%; /* Define a Largura*/
+        align-items: center; /* Alinha os Itens ao centro*/
+        justify-content: center; /* Centraliza os elementos*/
     }
 
+    /** Padrão para o Input da Taxa de Juros*/
     #juros {
-        margin-bottom: 3em;
+        margin-bottom: 3em; /* Margem para o Botão */
     }
 
+    /** Padrão para o Parágrafo */
     p {
-        text-align: justify;
-        margin-right: 0.5em;
-        font-weight: 500;
-        font-size: 20px;
+        text-align: justify; /* Justifica o Texto */
+        margin-right: 0.5em; /* Dá uma margem para o input*/
+        font-weight: 500; /* Peso da Fonte*/
+        font-size: 20px; /* Tamanho da FOnte*/
     }
 
+    /** Padrão para o Título*/
     h1 {
-        margin-bottom: 1.5em;
-        font-weight: 600;
-        font-size: 40px;
+        margin-bottom: 1.5em; /* Margem do Titulo */
+        font-weight: 600; /* Peso da Fonte*/
+        font-size: 40px; /* Tamanho da Fonte */
     }
     
 }
 
+/** Define padrão para telas de até 375px*/
 @media screen and (max-width: 375px) {
+    /** Define padrão para a imagem */
     img {
-        text-align: center;
+        text-align: center; /* Alinha a imagem ao centro */
     }
 
+    /* Alinha o padrão para o título*/
     #titulo{
-        margin-bottom: 4em;
+        margin-bottom: 4em; /* Margem do Título*/
     }
 
+    /* Define padrão da input da Taxa de Juros ao Botão */
     #juros{
-        margin-bottom: 4em;
+        margin-bottom: 4em; /* Define a margem do Botão */
     }
 
+    /* Define padrão para o parágrafo */
     p {
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 16px; /* Tamanho da Fonte */
+        font-weight: 600; /* Peso da Fonte*/
     }
 
+    /* Define padrão para o título */
     h1 {
-        font-weight: 600;
-        font-size: 36px;
+        font-weight: 600; /* Peso da Fonte*/
+        font-size: 36px; /* Tamanho da Fonte */
     }
 
+    /* Define padrão para os inputs */
     #input{
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5em; /*Margin dos inputs */
     }
 
+    /** Margin para todos os inputs */
     #valor-financiado, #numero-prestacoes, #taxa-juros{
-        width: 80%;
+        width: 80%; /* Largura dos Inputs*/
     }
 }
 
+/** Padrão para telas com larguras menores que 425px*/
 @media screen and (min-width: 425px) {
+    /* Padrão para a Imagem*/
     img {
-        text-align: center;
+        text-align: center; /* Alinha imagem ao centro */
     }
 
+    /* Padrão para o Título*/
     #titulo {
-        margin-bottom: 4em;
+        margin-bottom: 4em; /* Margem do Título */
     }
 
+    /* Padrão para o Ultimo Input e o Botão*/
     #juros {
-        margin-bottom: 4.5em;
+        margin-bottom: 4.5em; /* Dá Margem para o botão*/
     }
 
+    /* Padrão para o Parágrafo */
     p {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 18px; /* Tamanho da Fonte */
+        font-weight: 600; /* Peso da Fonte */
     }
 
+    /* Padrão para as Input */
     #valor-financiado, #numero-prestacoes, #taxa-juros{
-        width: 80%;
+        width: 80%; /* Largura da Input*/
     }
 }
 
+/* Define padrão para telas que são menores que 768px*/
 @media screen and (min-width: 768px) {
+    /* Define padrão para Imagem*/
     img {
-        margin-right: 3em;
+        margin-right: 3em; /* Centraliza o Título */
     }
 
+    /* Define padrão para o título*/
     #titulo {
-        display: flex;
-        margin-bottom: 2.5em;
+        display: flex; /* Divide os Elementos*/
+        margin-bottom: 2.5em; /* Margem */
     }
 
+    /* Padrão para os Inputs*/
     #valor-financiado, #numero-prestacoes, #taxa-juros {
-        width: 50%;
-        align-items: center;
+        width: 50%; /* Largura dos Inputs*/
+        align-items: center; /* Alinha os itens ao centro */
     }
 
+    /* Margem do input para os botões*/
     #juros {
-        margin-bottom: 4.5em;
+        margin-bottom: 4.5em; /*Margem*/
     }
 
+    /* Define Padrão para o Parágrafo*/
     p {
-        font-size: 18px;
+        font-size: 18px; /* Tamanho da Fonte */
     }
 
+    /* Define Padrão para o Título */
     h1 {
-        font-size: 40px;
+        font-size: 40px; /* Tamanho da Fonte*/
     }
 
+    /* Define padrão para o Resultado*/
     #resultado{
-        margin-top: 6em;
+        margin-top: 6em; /* Margem do topo*/
     }
 }
 
+/*Define margem para telas menores que 1440px*/
 @media screen and (min-width: 1440px) {
+    /* Define padrão para a Imagem */
     #titulo > img {
-        text-align: center;
-        margin-right: 24em;
+        text-align: center; /* Alinha ao Centro*/
+        margin-right: 24em; /* Centraliza o Título*/
     }
 
+    /* Padrão para o título */
     #titulo {
-        margin-bottom: 3.5em;
+        margin-bottom: 3.5em; /* Margem do Título para as input*/
     }
 
+    /* Padrão do Parágrafo */
     p {
-        font-size: 28px;
+        font-size: 28px; /* Padrão da Fonte*/
     }
 
+    /* Padrão do Título */
     h1 {
-        font-size: 42px;
+        font-size: 42px; /* Tamanho da Fonte */
     }
 }
 
+/* Define padrão para as telas de iMAC*/
 @media screen and (min-width: 2560px) {
+    /* Define o padrão para a Imagem*/
     #titulo > img {
-        text-align: center;
-        margin-right: 50em;
-        width: 14%;
+        text-align: center; /* Alinha ao Centro */
+        margin-right: 50em; /* Alinha o Título*/
+        width: 14%; /*Largura da Imagem*/
     }
 
+    /* Define padrão para as inputs */
     #valor-financiado, #numero-prestacoes, #taxa-juros {
-        width: 75%;
+        width: 75%; /* Largura da Input */
     }
 
+    /* Define padrão para a ultima input*/ 
     #juros {
-        margin-bottom: 10em;
+        margin-bottom: 10em; /* Coloca margem da ultima input até o botão*/
     }
 
+    /* Define o Padrão para o Paragráfo */
     p {
-        font-size: 48px;
+        font-size: 48px; /* Tamanho da Fonte*/
     }
 
+    /* Define o Padrão para o Título*/
     h1 {
-        font-size: 72px;
+        font-size: 72px; /* Tamanho da Fonte*/
     }
 
+    /* Define padrão para o botão*/
     #btn{
-    border-radius: 0.28em;
-    width: 5em;
-    height: 2em;
-    font-size: 42px;
+    border-radius: 0.28em; /* Arredonda o Botão */
+    width: 5em; /* Largura do Botão*/
+    height: 2em; /* Altura do Botão*/
+    font-size: 42px; /* Tamanho da Fonte do Botão*/
     }
 }
+/**
+**********FIM**********
+**/
