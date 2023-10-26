@@ -89,14 +89,14 @@ html {
 }
 
 /** Define padrão para telas de até 375px*/
-@media screen and (min-width: 200px and max-width: 375px) {
+@media screen and (max-width: 375px) {
     /** Define padrão para a imagem */
     img {
         text-align: center; /* Alinha a imagem ao centro */
     }
 
     /* Alinha o padrão para o título*/
-    #titulo{
+    #titulo > img{
         margin-bottom: 4em; /* Margem do Título*/
     }
 
@@ -136,7 +136,7 @@ html {
     }
 
     /* Padrão para o Título*/
-    #titulo {
+    #titulo > img {
         margin-bottom: 4em; /* Margem do Título */
     }
 
@@ -165,7 +165,7 @@ html {
     }
 
     /* Define padrão para o título*/
-    #titulo {
+    #titulo > img {
         display: flex; /* Divide os Elementos*/
         margin-bottom: 2.5em; /* Margem */
     }
