@@ -118,7 +118,7 @@ html {
     }
 
     /* Define padrão para os inputs */
-    #input{
+    .input{
         margin-bottom: 0.5em; /*Margin dos inputs */
     }
 
