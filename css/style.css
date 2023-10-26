@@ -91,13 +91,9 @@ html {
 /** Define padrão para telas de até 375px*/
 @media screen and (max-width: 375px) {
     /** Define padrão para a imagem */
-    img {
-        text-align: center; /* Alinha a imagem ao centro */
-    }
-
-    /* Alinha o padrão para o título*/
     #titulo > img{
         margin-bottom: 4em; /* Margem do Título*/
+        text-align: center; /* Alinha a imagem ao centro */
     }
 
     /* Define padrão da input da Taxa de Juros ao Botão */
@@ -131,13 +127,9 @@ html {
 /** Padrão para telas com larguras menores que 425px*/
 @media screen and (min-width: 425px) {
     /* Padrão para a Imagem*/
-    img {
-        text-align: center; /* Alinha imagem ao centro */
-    }
-
-    /* Padrão para o Título*/
     #titulo > img {
         margin-bottom: 4em; /* Margem do Título */
+        text-align: center; /* Alinha a imagem ao centro */
     }
 
     /* Padrão para o Ultimo Input e o Botão*/
@@ -160,14 +152,10 @@ html {
 /* Define padrão para telas que são menores que 768px*/
 @media screen and (min-width: 768px) {
     /* Define padrão para Imagem*/
-    img {
-        margin-right: 3em; /* Centraliza o Título */
-    }
-
-    /* Define padrão para o título*/
     #titulo > img {
         display: flex; /* Divide os Elementos*/
         margin-bottom: 2.5em; /* Margem */
+        margin-right: 3em; /* Centraliza o Título */
     }
 
     /* Padrão para os Inputs*/
